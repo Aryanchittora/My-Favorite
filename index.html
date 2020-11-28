@@ -3,13 +3,15 @@
     <html>
 
     <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> My Favorite </title>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -46,18 +48,9 @@
         <h3>Click on the images to view my Inspiration</h3>
         <a target="_blank" href="https://www.juventus.com/en/search?q=cristiano+ronaldo"><img class="ins" src="https://timesofindia.indiatimes.com/thumb/msid-77910555,width-1200,height-900,resizemode-4/.jpg"></a>
         <a target="_blank" href="https://www.fcbarcelona.com/en/football/first-team/players/4974/lionel-messi"><img class="ins" src="https://www.fcbarcelona.com/photo-resources/2019/09/26/43931b52-6dcb-4f1e-8fba-81e5b688f11a/10_MESSI_JUGADORS-WEB.jpg?width=840&height=525"></a>
-    </section>
-
-    <section id="contact">
-        <br>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7223.010001169255!2d75.85192780000001!3d25.1524207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396f85991042ead3%3A0x9116ffa699141517!2sChittora%20Hospital%20And%20Imaging%20Center.!5e0!3m2!1sen!2sin!4v1602138567181!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-        <div class="contact">
-            <a href="mailto:aryanchittora09@gmail.com?subjet=hello"><i class="fa fa-envelope">&nbsp;&nbsp;<h3>mygmailid.com</h3></i></a>
-        </div>
-    </section>
-
-    <div class="container">
-        <div id="mycarousel" class="carousel slide">
+        
+        <div class="container">
+        <div id="mycarousel" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="item active">
                     <center>
@@ -73,21 +66,30 @@
                 <div class="item">
                     <center>
                         <a>
-                        <img src="https://www.fcbarcelona.com/photo-resources/2019/09/26/43931b52-6dcb-4f1e-8fba-81e5b688f11a/10_MESSI_JUGADORS-WEB.jpg?width=840&height=525" class="img-responsive">
-                            </a>
+                            <img src="https://www.fcbarcelona.com/photo-resources/2019/09/26/43931b52-6dcb-4f1e-8fba-81e5b688f11a/10_MESSI_JUGADORS-WEB.jpg?width=840&height=525" class="img-responsive">
+                        </a>
                         <div class="carousel-content">
                             <h3>Lionel Messi</h3>
                         </div>
                     </center>
+                </div>
 
-                    <div class="item">
-                        <center>
-                            <img src="https://i.ytimg.com/vi/eQISj88bMa8/maxresdefault.jpg" class="img-responsive">
-                            <div class="carousel-content">
-                                <h3>Neymar Jr</h3>
-                            </div>
-                        </center>
-                    </div>
+                <div class="item">
+                    <center>
+                        <img src="https://i.ytimg.com/vi/eQISj88bMa8/maxresdefault.jpg" class="img-responsive">
+                        <div class="carousel-content">
+                            <h3>Neymar Jr</h3>
+                        </div>
+                    </center>
+                </div>
+
+                <div class="item">
+                    <center>
+                        <img src="https://fsb.zobj.net/crop.php?r=5o4lD8_EZgFYghtXQj9Q5AgT-IBEZKf5bh5Kco2inAJseLHO6vVQJTQmYX1ZVPHGIg65klu7MWL21K-6ib2TGucaTbxr4kVGc6_Z28wJkrPQ5SvuhGDAEnHsA0kCG4RxjzmWhSgEQgu5e15d">
+                        <div class="carousel-content">
+                            <h3>Diego Maradona</h3>
+                        </div>
+                    </center>
                 </div>
             </div>
 
@@ -96,6 +98,25 @@
 
             <a class="right carousel-control" href="#mycarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span>
             </a>
+
+            <ol class="carousel-indicators">
+                <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#mycarousel" data-slide-to="1"></li>
+                <li data-target="#mycarousel" data-slide-to="2"></li>
+                <li data-target="#mycarousel" data-slide-to="3"></li>
+            </ol>
         </div>
     </div>
-</body></html>
+    </section>
+
+    <section id="contact">
+        <br>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7223.010001169255!2d75.85192780000001!3d25.1524207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396f85991042ead3%3A0x9116ffa699141517!2sChittora%20Hospital%20And%20Imaging%20Center.!5e0!3m2!1sen!2sin!4v1602138567181!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <div class="contact">
+            <a href="mailto:aryanchittora09@gmail.com?subjet=hello"><i class="fa fa-envelope">&nbsp;&nbsp;<h3>mygmailid.com</h3></i></a>
+        </div>
+    </section>
+    
+</body>
+
+</html>
